@@ -1,0 +1,38 @@
+.ang-sideNav-modal {
+  .ang-sideNav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: $Center;
+    background: $ModalHeaderBackground;
+    padding: 0.5em 0.5em;
+
+    .ang-title {
+      margin: 0;
+      text-transform: uppercase;
+      &.ang-create {
+        color: $ModalCreateColor;
+      }
+      &.ang-edit {
+        color: $ModalEditColor;
+      }
+      &.ang-remove {
+        color: $ModalRemoveColor;
+      }
+    }
+  }
+  .ang-sideNav-body {
+    .ang-title {
+      text-align: $Center;
+      padding: 15px 0;
+    }
+    .ang-modal-button {
+      text-align: $Center;
+      .ang-link {
+        color: $ModalLinkColor;
+      }
+    }
+  }
+  .ang-sideNav-footer {
+    background: $ModalFooterBackground;
+  }
+}

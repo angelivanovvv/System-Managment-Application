@@ -1,0 +1,46 @@
+.ang-single-notice-wrapper {
+  margin-top: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: $Center;
+  align-items: $Center;
+}
+
+.ang-single-notice {
+  width: 85%;
+
+  .ang-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .ang-title {
+      text-transform: uppercase;
+    }
+    .ang-element {
+      color: $CardElementColor;
+    }
+  }
+
+  .ang-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 15px;
+    .ang-body-row {
+      .ang-title {
+        background: $BodyRowBackground;
+        padding: 10px;
+      }
+      .ang-content {
+        padding: 10px;
+      }
+    }
+  }
+
+  .ang-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

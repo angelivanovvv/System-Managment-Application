@@ -1,0 +1,29 @@
+.ang-body-wrapper {
+  width: 100%;
+  .ang-body-container {
+    height: auto;
+    .ang-error-wrapper {
+      height: 100%;
+    }
+    @include desktop {
+      height: calc(100% - 65px);
+    }
+
+    .ang-container-wrapper {
+      height: 100%;
+      .ang-row-wrapper {
+        height: 100%;
+        .ang-col-wrapper {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.ang-hide-for-mobile {
+  display: $None !important;
+  @include desktop {
+    display: $Block !important;
+  }
+}

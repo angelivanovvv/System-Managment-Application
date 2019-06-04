@@ -1,0 +1,36 @@
+.ang-navBar {
+  padding: 10px 10px 10px 5px;
+
+  .ang-menu-button {
+    margin-left: 20px;
+
+    @include tablet {
+      margin-left: 15px;
+    }
+  }
+
+  .navbar-toggler {
+    margin-right: 20px;
+
+    @include tablet {
+      margin-right: 0px;
+    }
+  }
+
+  .ang-navBar-item {
+    padding: 0.5rem;
+    color: $NavBarLinkColor;
+  }
+
+  .navbar-nav {
+    display: inline-block;
+    float: $None;
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  .navbar-collapse {
+    text-align: $Center;
+  }
+}

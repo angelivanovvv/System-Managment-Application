@@ -1,0 +1,31 @@
+.ang-form {
+  height: 100%;
+}
+
+.ang-form-label {
+  color: $InputLabelColor;
+  font-family: $DefaultFontFamily;
+  font-weight: $Bold;
+}
+
+.ang-form-input {
+  background: $InputBackground;
+}
+
+.ang-error-form {
+  display: $Block;
+  text-align: $Center;
+  color: $ErrorColor;
+  @include setFontSize("Error");
+}
+
+.ang-error-message-input {
+  @include setFontSize("Error");
+  margin-left: 5px;
+  color: $ErrorColor;
+}
+
+.ang-error-style-input {
+  outline: $None;
+  border: 1px solid $ErrorColor !important;
+}

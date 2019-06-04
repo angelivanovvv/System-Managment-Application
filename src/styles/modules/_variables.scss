@@ -1,0 +1,171 @@
+/*---------------- GENERAL VARIABLES ---------------*/
+
+$Margin0: 0;
+$Padding0: 0;
+$Visible: visible;
+$Hidden: hidden;
+$Block: block;
+$None: none;
+$Center: center;
+$Transparent: transparent;
+$Bold: bold;
+
+/*---------------- COLORs ---------------*/
+
+$white: #fff;
+$darkWhite: #f8f9fa;
+
+$black: #000;
+$darkBlack: #343a40;
+
+$grey: #d4d4d4;
+$lightGrey: #ced4da;
+$darkGrey: #838383;
+$darkerGrey: #495057;
+
+$red: #ff0000;
+$lightRed: #e74c3c;
+
+$green: #4da53a;
+$lightGreen: #2ecc71;
+
+$blue: #007bff;
+$lightBlue: #6294c6;
+$lighterBlue: #80bdff;
+
+$yellow: #f1c40f;
+
+$modalColor: rgba(0, 0, 0, 0.03);
+$inputColor: rgba(98, 148, 198, 0.05);
+$inputBoxShadowColor: rgba(0, 123, 255, 0.25);
+
+$redButton: $lightRed;
+$greenButton: $lightGreen;
+$blueButton: $lightBlue;
+$yellowButton: $yellow;
+$grayButton: $darkGrey;
+
+$rowColor: rgba(0, 0, 0, 0.03);
+$cardBackground: rgba(0, 0, 0, 0.03);
+
+/*----------------------- COLOR VARs -------------------------------*/
+
+$BlockBackground: $white;
+$BodyColor: $grey;
+$ContainerBackground: $white;
+$ErrorColor: $red;
+
+/*----------------------- BUTTONS VARs -----------------------------*/
+
+$ButtonColor: $white;
+
+$CancelBackground: $grayButton;
+$CloseBackground: $grayButton;
+
+$CreateBackground: $greenButton;
+$EditBackground: $blueButton;
+$RemoveBackground: $redButton;
+
+$MenuBackground: $blueButton;
+
+$SearchBackground: $yellowButton;
+$SimpleSearchBackground: $blueButton;
+$AdvanceSearchBackground: $blueButton;
+
+/*---------------------- CARD VARs -------------------------------*/
+
+$CardHeaderBackground: $cardBackground;
+$CardFooterBackground: $cardBackground;
+$CardElementColor: $lightBlue;
+$CardElementRemoveColor: $lightRed;
+
+/*---------------------- FORM VARs -------------------------------*/
+
+$InputLabelColor: $black;
+$InputBackground: $inputColor;
+
+/*---------------------- NAV BAR VARs -------------------------------*/
+
+$NavBarLinkColor: $darkWhite;
+
+/*---------------------- SIDE NAV VARs ------------------------------*/
+
+$SideNavLinkColor: $darkWhite;
+$SideNavLinkHoverColor: $lightBlue;
+
+/*---------------------- SIDE NAV MODAL VARs ------------------------*/
+$ModalCreateColor: $lightGreen;
+$ModalEditColor: $lightBlue;
+$ModalRemoveColor: $lightRed;
+
+$ModalHeaderBackground: $modalColor;
+$ModalFooterBackground: $modalColor;
+
+$ModalLinkColor: $darkBlack;
+
+/*---------------------- NOTIFICATION MODAL VARs -------------------*/
+
+$ModalNotificationHeader: $modalColor;
+$ModalNotificationFooter: $modalColor;
+$ModalSuccessColor: $green;
+$ModalErrorColor: $red;
+$ModalNameColor: $darkBlack;
+
+/*---------------------- FONTs -----------------------------*/
+$DefaultFontFamily: "Roboto", sans-serif;
+$DefaultFontSize: 16px;
+
+/*------------------- SINGLE LIST ELEMENT VARs ------------------*/
+
+$SingleElementColor: $darkBlack;
+$SingleElementHoverColor: $white;
+$SingleElementHoverBackground: $lightBlue;
+$SingleElementBorderColor: $lightBlue;
+$SingleElementActiveBackground: $lightBlue;
+$SingleElementActiveColor: $white;
+
+/*------------------- SINGLE NOTICE VARs ------------------*/
+
+$BodyRowBackground: $rowColor;
+
+/*------------------- SEARCH NOTICE VARs ------------------*/
+$InputBackgroundColor: $white;
+$InputColor: $darkerGrey;
+$InputBorderColor: $lightGrey;
+$InputFocusColor: $darkerGrey;
+$InputFocusBorderColor: $lighterBlue;
+$InputBoxShadowColor: $inputBoxShadowColor;
+
+/*------------------------------- MAPs -------------------------*/
+
+$FontSizes: (
+  H1: 2em,
+  H2: 1.5em,
+  H3: 1.17em,
+  H4: 0.97em,
+  H5: 0.83em,
+  H6: 0.67em,
+  A: 1em,
+  P: 1em,
+  Span: 1em,
+  Error: 0.8em,
+  Button: 1em
+);
+
+$Breakpoints: (
+  Phone: 566px,
+  Tablet: 768px,
+  Desktop: 992px
+);
+
+$ButtonColors: (
+  Cancel: $CancelBackground,
+  Close: $CloseBackground,
+  Create: $CreateBackground,
+  Edit: $EditBackground,
+  Remove: $RemoveBackground,
+  Menu: $MenuBackground,
+  Search: $SearchBackground,
+  SimpleSearch: $SimpleSearchBackground,
+  AdvanceSearch: $AdvanceSearchBackground
+);

@@ -1,0 +1,42 @@
+.ang-notices-wrapper {
+  height: 100%;
+  padding: 15px 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: $BlockBackground;
+
+  @include desktop {
+    height: calc(100% - 245px);
+  }
+  .ang-title {
+    margin: 10px 0 10px 5px;
+  }
+  .ang-notices-container {
+    max-height: 305px;
+    overflow-y: auto;
+
+    .ang-notice-message {
+      text-align: center;
+      font-style: italic;
+      color: $darkGrey;
+      padding: 20px 0;
+    }
+  }
+}
+
+.ang-notice-list-wrapper {
+  height: calc(100% - 30px);
+  margin: 15px 0;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background: $BlockBackground;
+
+  .ang-title {
+    margin: 10px 0 10px 5px;
+  }
+
+  .ang-notice-list-container {
+    max-height: 430px;
+    overflow-y: auto;
+  }
+}

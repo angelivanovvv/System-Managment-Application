@@ -1,0 +1,95 @@
+/*------------- SINGLE NOTICE EDITABLE ITEM ------------*/
+.ang-single-notice-editable-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px 0 5px 5px;
+  transition: all 0.2s;
+  border-bottom: 1px solid $SingleElementBorderColor;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    background: $SingleElementHoverBackground;
+  }
+
+  &:hover .ang-link {
+    color: $SingleElementHoverColor;
+  }
+
+  .ang-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transition: all 0.2s;
+    color: $SingleElementColor;
+
+    .ang-drag-image {
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+
+    .ang-name {
+      margin-left: 10px;
+    }
+
+    .ang-input {
+      width: 200px;
+      height: 30px;
+      margin: 0 0 0 10px;
+      z-index: 10;
+    }
+  }
+
+  .ang-edit-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.2s;
+
+    button {
+      background: $Transparent;
+      border: $None;
+      color: $white;
+      outline: $None;
+    }
+
+    .ang-edit-button,
+    .ang-save-button,
+    .ang-cancel-button {
+      &.hide {
+        display: $None;
+      }
+    }
+  }
+}
+
+/*------------- SINGLE NOTICE EDITABLE ITEM------------*/
+.ang-single-notice-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: cener;
+  align-items: flex-end;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 1px solid $SingleElementBorderColor;
+
+  &:hover {
+    background: $SingleElementHoverBackground;
+    color: $SingleElementHoverColor;
+  }
+  &.active {
+    background: $SingleElementActiveBackground;
+    color: $SingleElementActiveColor;
+  }
+
+  .ang-image {
+    margin-right: 15px;
+  }
+}

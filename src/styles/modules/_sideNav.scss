@@ -1,0 +1,74 @@
+.ang-sideNav {
+  min-height: 100vh;
+  margin-left: 0;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+
+  @include tablet {
+    margin-left: -15rem;
+  }
+  .ang-logo {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .ang-image {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .ang-title {
+      color: $SideNavLinkColor;
+    }
+  }
+
+  &.show {
+    margin-left: -15rem;
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+}
+
+.ang-sideНav-item {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid $SideNavLinkColor;
+  color: $SideNavLinkColor;
+  cursor: pointer;
+  transition: 0.3s ease-out color;
+
+  .ang-link {
+    width: 15rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $SideNavLinkColor;
+    cursor: pointer;
+    transition: 0.3s ease-out color;
+  }
+
+  .ang-link:hover {
+    color: $SideNavLinkHoverColor;
+  }
+
+  &:hover {
+    color: $SideNavLinkHoverColor;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

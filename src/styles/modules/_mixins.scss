@@ -1,0 +1,32 @@
+@mixin setFontSize($element) {
+  font-size: map-get($FontSizes, $element);
+}
+
+@mixin buttonType($bg) {
+  background: map-get($ButtonColors, $bg);
+  &:hover {
+    background: darken(map-get($ButtonColors, $bg), 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken(map-get($ButtonColors, $bg), 25%);
+  }
+}
+
+@mixin phone {
+  @media only screen and (min-width: map-get($Breakpoints, "Phone")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: map-get($Breakpoints, "Tablet")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: map-get($Breakpoints, "Desktop")) {
+    @content;
+  }
+}

@@ -1,0 +1,38 @@
+.ang-notification-modal {
+  .ang-modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: $Center;
+    background-color: $ModalNotificationHeader;
+  }
+  .ang-modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: $Center;
+    padding: 50px 0;
+    text-align: center;
+
+    .ang-success-message {
+      color: $ModalSuccessColor;
+
+      .ang-title {
+        color: $ModalNameColor;
+      }
+    }
+    .ang-error-message {
+      text-align: center;
+      color: $ModalErrorColor;
+
+      .ang-error-description {
+        display: $Block;
+        padding: 10px 0;
+      }
+      .ang-title {
+        color: $ModalNameColor;
+      }
+    }
+  }
+  .ang-modal-footer {
+    background-color: $ModalNotificationFooter;
+  }
+}

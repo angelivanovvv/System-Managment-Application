@@ -1,0 +1,24 @@
+.ang-folders-wrapper {
+  height: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background: $BlockBackground;
+  @include desktop {
+    height: calc(100% - 30px);
+  }
+  .ang-title {
+    margin: 10px 0 10px 5px;
+  }
+  .ang-folders-container {
+    > ul {
+      > li {
+        > div:nth-child(2) {
+          max-height: 400px;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}

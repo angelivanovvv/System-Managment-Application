@@ -1,0 +1,53 @@
+.ang-card-template {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include desktop {
+    margin-top: 15px;
+  }
+
+  .ang-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: $Center;
+    background: $CardHeaderBackground;
+    .ang-title {
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+    .ang-element {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: $CardElementColor;
+    }
+  }
+
+  .ang-card-body {
+    padding: 20px 20px;
+    .ang-card-title {
+      .ang-element {
+        text-transform: uppercase;
+        font-weight: $Bold;
+        color: $CardElementColor;
+      }
+    }
+    .ang-card-text {
+      .ang-remove-element {
+        text-transform: uppercase;
+        font-weight: $Bold;
+        color: $CardElementRemoveColor;
+      }
+    }
+  }
+
+  .ang-card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $CardFooterBackground;
+  }
+}

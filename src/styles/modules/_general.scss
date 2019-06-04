@@ -1,0 +1,78 @@
+/*-------------------- GENERALs --------------------*/
+body {
+  font-size: $DefaultFontSize;
+  font-family: $DefaultFontFamily;
+}
+
+body,
+html {
+  margin: $Margin0;
+  padding: $Padding0;
+  background: $BodyColor;
+  overflow-x: $Hidden;
+}
+
+ul,
+li {
+  list-style-type: $None;
+  padding: 0;
+}
+
+span,
+p,
+a {
+  font-family: $DefaultFontFamily;
+  margin: $Margin0;
+  padding: $Padding0;
+}
+
+a:hover {
+  color: $None;
+  text-decoration: $None;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $DefaultFontFamily;
+  margin: 0;
+}
+
+h1 {
+  @include setFontSize("H1");
+}
+
+h2 {
+  @include setFontSize("H2");
+}
+
+h3 {
+  @include setFontSize("H3");
+}
+
+h4 {
+  @include setFontSize("H4");
+}
+
+h5 {
+  @include setFontSize("H5");
+}
+
+h6 {
+  @include setFontSize("H6");
+}
+
+a {
+  @include setFontSize("A");
+}
+
+p {
+  @include setFontSize("P");
+}
+
+span {
+  @include setFontSize("Span");
+}

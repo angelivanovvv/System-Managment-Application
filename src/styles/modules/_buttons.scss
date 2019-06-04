@@ -1,0 +1,53 @@
+.ang-button {
+  color: $ButtonColor;
+  text-decoration: $None;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border-color: $Transparent;
+  font-family: $DefaultFontFamily;
+  @include setFontSize("Button");
+
+  &:hover {
+    border-color: $Transparent;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: $None;
+  }
+}
+
+.ang-cancel-button {
+  @include buttonType("Cancel");
+}
+
+.ang-close-button {
+  @include buttonType("Close");
+}
+
+.ang-create-button {
+  @include buttonType("Create");
+}
+
+.ang-edit-button {
+  @include buttonType("Edit");
+}
+
+.ang-remove-button {
+  @include buttonType("Remove");
+}
+
+.ang-menu-button {
+  @include buttonType("Menu");
+}
+
+.ang-search-button {
+  @include buttonType("Search");
+}
+
+.ang-simple-search-button {
+  @include buttonType("SimpleSearch");
+}
+
+.ang-advance-search-button {
+  @include buttonType("AdvanceSearch");
+}
